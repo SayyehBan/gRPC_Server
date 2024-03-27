@@ -25,6 +25,20 @@ public class ProductWebService : ProductService.ProductServiceBase
             IsSuccess = true,
         });
     }
+    public override Task<ResponseAllProduct> GetAllProduct(RequestAllProduct request, ServerCallContext context)
+    {
+        ResponseAllProduct response = new ResponseAllProduct();
+        foreach (var item in Products)
+        {
+            response.Items.Add(new ProductItem
+            {
+                Brand = item.Brand,
+                Name = item.Name,
+                Price = item.Price,
+            });
+        }
+        return Task.FromResult(response);
+    }
 }
 
 public class Products
