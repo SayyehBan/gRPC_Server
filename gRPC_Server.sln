@@ -5,6 +5,14 @@ VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC_Server", "gRPC_Server\gRPC_Server.csproj", "{B4B022A3-CA19-4042-B888-E423ACC2F549}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsClient", "WinFormsClient\WinFormsClient.csproj", "{D56148BC-0B9E-4E8B-9390-4D9CE7097A75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{EAF6F805-0693-4C8F-83CB-04AF12745271}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{45709884-AEB1-4F28-B7BB-41ADB7D72AED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{9345E594-566D-45E9-8A98-80B5331DAF23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +23,22 @@ Global
 		{B4B022A3-CA19-4042-B888-E423ACC2F549}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4B022A3-CA19-4042-B888-E423ACC2F549}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4B022A3-CA19-4042-B888-E423ACC2F549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D56148BC-0B9E-4E8B-9390-4D9CE7097A75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D56148BC-0B9E-4E8B-9390-4D9CE7097A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D56148BC-0B9E-4E8B-9390-4D9CE7097A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D56148BC-0B9E-4E8B-9390-4D9CE7097A75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAF6F805-0693-4C8F-83CB-04AF12745271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAF6F805-0693-4C8F-83CB-04AF12745271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAF6F805-0693-4C8F-83CB-04AF12745271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAF6F805-0693-4C8F-83CB-04AF12745271}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B4B022A3-CA19-4042-B888-E423ACC2F549} = {9345E594-566D-45E9-8A98-80B5331DAF23}
+		{D56148BC-0B9E-4E8B-9390-4D9CE7097A75} = {45709884-AEB1-4F28-B7BB-41ADB7D72AED}
+		{EAF6F805-0693-4C8F-83CB-04AF12745271} = {45709884-AEB1-4F28-B7BB-41ADB7D72AED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6207E378-1B0E-4A80-9215-06235A84E35D}
